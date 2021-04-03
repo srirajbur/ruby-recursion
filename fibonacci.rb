@@ -8,3 +8,11 @@ def fibs(n)
     i  += 1
   end
 end
+
+def fibs_rec(n)
+  return n if n <= 1
+
+  fibs_rec(n-1) + fibs_rec(n-2)
+end
+
+puts fibs_rec(15)
